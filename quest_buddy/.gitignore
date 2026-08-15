@@ -209,3 +209,6 @@ fabric.properties
 # Environment variable files
 .env
 .env.*
+
+htmlReport/
+**/htmlReport/
