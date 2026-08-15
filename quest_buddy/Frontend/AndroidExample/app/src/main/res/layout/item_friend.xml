@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_button_orange"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Name + Chat Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvFriendName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Friend Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnChat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_chat_bubble_24"
+            app:tint="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFriendUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@username"
+        android:textColor="#FFF5EE"
+        android:textSize="15sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Profile button (for LOAD tab) -->
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Profile"
+        android:background="@drawable/rounded_buttons"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF9800"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="8dp"
+        android:elevation="4dp"
+        android:visibility="visible" />
+
+    <!-- Add Friend button (for SUGGESTIONS tab) -->
+    <Button
+        android:id="@+id/btnAddFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Friend"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF9800"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <!-- Accept / Reject / Block (for REQUESTS tab) -->
+    <LinearLayout
+        android:id="@+id/llRequestActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="6dp" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REJECT"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:layout_marginBottom="6dp" />
+
+        <Button
+            android:id="@+id/btnBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLOCK"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#616161" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.AndroidExample"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Signup screen -->
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".DayViewActivity"/>
+        <activity
+            android:name=".trips.TripInvitesActivity"
+            android:exported="false" />
+        <activity android:name=".friends.SuggestionsActivity" android:exported="true" />
+        <activity android:name=".friends.RequestsActivity" android:exported="true" />
+        <activity android:name=".tasks.TaskManagerActivity"
+            android:exported="true"/>
+        <activity android:name=".packing.PackingChecklistActivity"
+            android:exported="true"/>
+        <activity android:name=".CurrencyConverterActivity"/>
+        <activity android:name=".friends.FriendsListActivity" android:exported="true" />
+        <activity android:name=".tripplanner.TripEventsActivity" android:exported="true" />
+        <activity android:name=".tripplanner.AddEditTripEventActivity" android:exported="true" />
+        <activity android:name=".friends.FriendProfileActivity" />
+        <activity
+            android:name=".trips.TripChatActivity"
+            android:exported="false">
+        </activity>
+        <activity android:name=".messages.DirectChatActivity"/>
+        <activity android:name=".notifications.NotificationsActivity" android:exported="true" />
+        <activity android:name=".budget.BudgetListActivity" android:exported="true" />
+        <activity android:name=".budget.CreateBudgetActivity" android:exported="true" />
+        <activity android:name=".budget.BudgetDetailActivity" android:exported="true" />
+        <activity android:name=".trips.TripListActivity" android:exported="true" />
+        <activity android:name=".payments.PremiumActivity" android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AndroidExample</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string-array name="drawer_items">
+        <item>Home</item>
+        <item>Tasks Manager</item>
+        <item>Calendar</item>
+        <item>Packing CheckList</item>
+        <item>Friends</item>
+        <item>Currency Converter</item>
+        <item>Budget Manager</item>
+        <item>Trips</item>
+        <item>Go Premium / Payments</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string name="mark_read">Mark Read</string>
+    <string name="delete">Delete</string>
+
+</resources>

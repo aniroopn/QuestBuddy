@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#FFF8E1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Back row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_arrow_back_24" />
+    </LinearLayout>
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:contentDescription="Profile Picture"
+        android:background="@drawable/profile_pic_bg"
+        android:padding="8dp" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/tvProfileUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@username"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/tvProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: example@gmail.com"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Unfriend -->
+    <Button
+        android:id="@+id/btnUnfriend"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="UNFRIEND"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_buttons"
+        android:backgroundTint="#FF9800"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Block -->
+    <Button
+        android:id="@+id/btnBlock"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="BLOCK"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_buttons"
+        android:backgroundTint="#F44336" />
+
+</LinearLayout>
